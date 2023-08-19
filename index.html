@@ -12,6 +12,70 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- works sans google font here  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- for customizing tailwind css  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundColor: {
+              "header-bg": "#f9f6e2",
+              "main-bg": "#f8f8f8",
+            },
+            colors: {
+              clifford: "#da373d",
+              "action-bg": "#e527b2",
+              "primary-text-color": "#111111",
+              "price-color": "rgba(17, 17, 17, 0.50)",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- custom css style  -->
+    <style>
+        .ff-work-sans{
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+
   </head>
-  <body></body>
+  <body>
+    <!-- header section  -->
+    <header class="bg-header-bg">
+      <!-- banner section start  -->
+      <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="flex-1">
+            <img
+              src="./images/Summer 1.png"
+              class="max-w-sm rounded-lg shadow-2xl"
+              alt="summer image"
+            />
+          </div>
+
+          <div class="flex-1">
+            <p>---SALE FEVER---</p>
+            <h1 class="text-5xl font-bold">
+              Purchase TK 200 or above & get <span>20% off</span>
+            </h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+            </p>
+            <div>
+              <p>Use Promo Code</p>
+              <p class="bg-primary">SELL200</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
