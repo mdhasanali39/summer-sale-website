@@ -30,7 +30,9 @@ for (const card of allCards) {
     // set total price in cart
     totalPriceElement.innerText = (totalPrice + productPrice).toFixed(2);
     // set final Total Price
-    finalTotalPriceElement.innerText = (finalTotalPrice + productPrice).toFixed(2);
+    finalTotalPriceElement.innerText = (finalTotalPrice + productPrice).toFixed(
+      2
+    );
 
     // create li now
     const li = document.createElement("li");
@@ -49,23 +51,31 @@ for (const card of allCards) {
         const couponFieldValue = document.getElementById("coupon-field").value;
 
         if (couponFieldValue == "SELL200") {
-          discountPriceElement.innerText =
-            ((parseFloat(totalPriceElement.innerText) / 100) * 20).toFixed(2);
+          discountPriceElement.innerText = (
+            (parseFloat(totalPriceElement.innerText) / 100) *
+            20
+          ).toFixed(2);
 
-          finalTotalPriceElement.innerText =
-            (parseFloat(totalPriceElement.innerText) -
-            discountPriceElement.innerText).toFixed(2);
+          finalTotalPriceElement.innerText = (
+            parseFloat(totalPriceElement.innerText) -
+            discountPriceElement.innerText
+          ).toFixed(2);
         } else {
           alert("Insert valid coupon code");
         }
       });
     }
 
-    // make purchase button
+    // make purchase button element
     const makePurchaseBtn = document.getElementById("btn-make-purchase");
     if (parseFloat(totalPriceElement.innerText) > 0) {
       makePurchaseBtn.removeAttribute("disabled");
     }
   });
 }
-function makePurchase() {}
+
+// modal go home button get and set add Event Listener
+const goHomeBtn = document.getElementById("btn-go-home");
+goHomeBtn.addEventListener("click", function () {
+  goHomeBtn.setAttribute("href", "index.html");
+});

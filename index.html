@@ -68,7 +68,7 @@
           <div class="flex-1">
             <img
               src="./images/Summer 1.png"
-              class="max-w-xs md:max-w-xl rounded-lg lg:mr-10"
+              class="max-w-xs md:max-w-lg rounded-lg lg:mr-10"
               alt="summer image"
             />
           </div>
@@ -563,7 +563,7 @@
         </section>
 
         <!-- product cart section -->
-        <section class="mt-[71px]">
+        <section class="mt-[71px] md:w-96">
           <!-- have coupon -->
           <div class="bg-white rounded-lg p-6">
             <h3 class="text-primary-text-color text-2xl font-medium mb-4">
@@ -620,13 +620,31 @@
             </div>
             <hr class="mt-7 mb-5" />
             <!-- Purchase button -->
+            <!-- popup Purchase (modal)  -->
+
+            <!-- The button to open modal -->
+            <a href="#my_modal_8"
+            >
             <button
               id="btn-make-purchase"
-              class="w-full relative -bottom-[30px] bg-action-bg text-white text-xl font-semibold border-none outline-none px-16 py-4 rounded-lg"
+              class="w-full relative -bottom-[30px] bg-action-bg text-white text-xl font-semibold border-none px-16 py-4 rounded-lg"
               disabled
             >
               Make Purchase
             </button>
+            </a>
+            <!-- Put this part before tag -->
+            <div class="modal text-center" id="my_modal_8">
+              <div class="modal-box pt-10">
+                <img src="./images/congo.png" alt="Purchased Congratulation image" class="mx-auto w-40">
+                <h3 class="font-bold text-5xl text-primary-text-color mt-6">Congratulations</h3>
+                <p class="py-4 text-xl text-[#11111180]">You Purchase the product</p>
+                <div class="modal-action">
+                  <a id="btn-go-home" class="mx-auto bg-action-bg text-white text-xl font-semibold border-none px-16 py-4 rounded-lg mb-10 cursor-pointer
+                  ">Go Home</a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </section>
