@@ -19,6 +19,14 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- for customizing tailwind css  -->
     <script>
@@ -45,8 +53,8 @@
       .ff-work-sans {
         font-family: "Work Sans", sans-serif;
       }
-      button:disabled{
-        opacity: .3;
+      button:disabled {
+        opacity: 0.3;
       }
     </style>
   </head>
@@ -60,7 +68,7 @@
           <div class="flex-1">
             <img
               src="./images/Summer 1.png"
-              class="max-w-xl rounded-lg mr-10"
+              class="max-w-xs md:max-w-xl rounded-lg lg:mr-10"
               alt="summer image"
             />
           </div>
@@ -70,7 +78,7 @@
               <p class="font-medium text-primary-text-color text-3xl mb-8">
                 ---SALE FEVER---
               </p>
-              <h1 class="text-5xl font-bold">
+              <h1 class="text-4xl md:text-5xl font-bold">
                 Purchase TK 200 or above & get
                 <span class="text-action-bg">20% off</span>
               </h1>
@@ -90,9 +98,9 @@
         </div>
       </div>
     </header>
-    <main class="bg-main-bg pt-28 pb-14">
-      <!-- products card section start  -->
-      <section class="flex gap-6 max-w-7xl mx-auto">
+    <main class="bg-main-bg pt-28 pb-14 px-5">
+      <!-- product cards and product cart section start  -->
+      <section class="flex gap-6 flex-col md:flex-row lg:max-w-7xl mx-auto">
         <!-- all products category -->
         <section class="flex-1 min-h-screen">
           <!-- kitchenware products card  -->
@@ -103,11 +111,11 @@
             </h2>
 
             <!-- kitchenware products -->
-            <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="grid justify-center gap-6 grid-cols-1 lg:grid-cols-3">
               <!-- kitchenware product 1 -->
               <div class="card bg-base-100 pt-4">
                 <figure
-                  class="px-10 py-8 w-11/12  mx-auto bg-[#1111110D] rounded-xl"
+                  class="px-10 py-8 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
                 >
                   <img
                     src="./images/prod1.png"
@@ -117,63 +125,12 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <!-- product rating -->
-                  <div class="rating rating-md rating-half">
-                    <input
-                      type="radio"
-                      name="rating-10"
-                      class="rating-hidden"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-10"
-                      class="bg-rating-color mask mask-star-2 mask-half-1"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-10"
-                      class="bg-rating-color mask mask-star-2 mask-half-2"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-10"
-                      class="bg-rating-color mask mask-star-2 mask-half-1"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-10"
-                      class="bg-rating-color mask mask-star-2 mask-half-2"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-10"
-                      class="bg-rating-color mask mask-star-2 mask-half-1"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-10"
-                      class="bg-rating-color mask mask-star-2 mask-half-2"
-                      checked
-                    />
-                    <input
-                      type="radio"
-                      name="rating-10"
-                      class="bg-rating-color mask mask-star-2 mask-half-1"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-10"
-                      class="bg-rating-color mask mask-star-2 mask-half-2"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-10"
-                      class="bg-rating-color mask mask-star-2 mask-half-1"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-10"
-                      class="bg-rating-color mask mask-star-2 mask-half-2"
-                    />
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
                   </div>
                   <h2
                     class="card-title text-xl text-primary-text-color font-semibold"
@@ -357,7 +314,7 @@
             </h2>
 
             <!-- Sportswear products -->
-            <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="grid gap-6 grid-cols-1 lg:grid-cols-3">
               <!-- Sportswear product 1 -->
               <div class="card bg-base-100 pt-4">
                 <figure
@@ -432,7 +389,7 @@
                   <h2
                     class="card-title text-xl text-primary-text-color font-semibold"
                   >
-                  Sports Back Cap
+                    Sports Back Cap
                   </h2>
                   <p class="text-xl text-price-color font-normal">
                     <span class="price">49.00</span> TK
@@ -513,7 +470,7 @@
                   <h2
                     class="card-title text-xl text-primary-text-color font-semibold"
                   >
-                  Full Jersey Set
+                    Full Jersey Set
                   </h2>
                   <p class="text-xl text-price-color font-normal">
                     <span class="price">69.00</span> TK
@@ -594,7 +551,7 @@
                   <h2
                     class="card-title text-xl text-primary-text-color font-semibold"
                   >
-                  Sports cates
+                    Sports cates
                   </h2>
                   <p class="text-xl text-price-color font-normal">
                     <span class="price">159.00</span> TK
@@ -612,16 +569,18 @@
             <h3 class="text-primary-text-color text-2xl font-medium mb-4">
               Have coupon?
             </h3>
-            <div class="flex h-14 rounded-r-lg">
+            <div class="flex justify-center h-14 rounded-r-lg">
               <input
                 type="text"
                 name=""
                 id="coupon-field"
-                class="outline-none border rounded-l-lg border-[#11111126] text-xl font-normal px-4 text-[#11111166]"
+                class="outline-none border rounded-l-lg border-[#11111126] text-xl font-normal w-3/4 px-4 text-[#11111166]"
+                placeholder="Coupon code"
               />
               <button
+                id="btn-apply"
                 class="bg-action-bg text-white text-xl font-semibold border-none outline-none h-[100%] px-5 rounded-r-lg"
-              disabled
+                disabled
               >
                 Apply
               </button>
@@ -630,34 +589,40 @@
           <!-- items name, total prices, Purchase button and more  -->
           <div class="bg-white rounded-lg p-6 pb-0 mt-6">
             <!-- items name -->
-            <ol class="list-decimal px-6 space-y-2">
-              <li class="text-2xl text-primary-text-color font-medium">
-                Home Cooker
-              </li>
-            </ol>
+            <ol id="cart-name-list" class="list-decimal px-6 space-y-2"></ol>
             <hr class="my-4" />
             <!-- total price, discount and final-total -->
             <div>
               <!-- total price -->
               <p class="text-primary-text-color text-2xl font-medium">
                 Total price:
-                <span class="text-[#11111180]">0.00<span>TK</span></span>
+                <span class="text-[#11111180]">
+                  <span id="total-price">0.00</span>
+                  TK
+                </span>
               </p>
               <!-- discount  -->
               <p class="text-primary-text-color text-2xl font-medium my-3">
                 Discount:
-                <span class="text-[#11111180]">0.00<span>TK</span></span>
+                <span class="text-[#11111180]">
+                  <span id="discount-price">0.00</span>
+                  TK
+                </span>
               </p>
               <!-- final-total -->
               <p class="text-primary-text-color text-2xl font-medium">
                 Total:
-                <span class="text-[#11111180]">0.00<span>TK</span></span>
+                <span class="text-[#11111180]">
+                  <span id="final-total-price">0.00</span>
+                  TK
+                </span>
               </p>
             </div>
             <hr class="mt-7 mb-5" />
             <!-- Purchase button -->
             <button
-              class="w-full relative -bottom-[30px] bg-action-bg text-white text-xl font-semibold border-none outline-none px-16 py-4  rounded-lg"
+              id="btn-make-purchase"
+              class="w-full relative -bottom-[30px] bg-action-bg text-white text-xl font-semibold border-none outline-none px-16 py-4 rounded-lg"
               disabled
             >
               Make Purchase
