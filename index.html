@@ -107,12 +107,12 @@
               <!-- kitchenware product 1 -->
               <div class="card bg-base-100 pt-4">
                 <figure
-                  class="px-10 py-8 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
+                  class="px-10 py-8 w-11/12  mx-auto bg-[#1111110D] rounded-xl"
                 >
                   <img
                     src="./images/prod1.png"
                     alt="product one image"
-                    class="rounded-xl"
+                    class="rounded-xl h-[130px]"
                   />
                 </figure>
                 <div class="card-body items-center text-center">
@@ -188,12 +188,12 @@
               <!-- kitchenware product 2 -->
               <div class="card bg-base-100 pt-4">
                 <figure
-                  class="px-10 py-7 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
+                  class="px-10 py-8 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
                 >
                   <img
                     src="./images/prod2.png"
                     alt="product two image"
-                    class="rounded-xl"
+                    class="rounded-xl h-[130px]"
                   />
                 </figure>
                 <div class="card-body items-center text-center">
@@ -274,7 +274,7 @@
                   <img
                     src="./images/prod3.png"
                     alt="product three image"
-                    class="rounded-xl"
+                    class="rounded-xl h-[130px]"
                   />
                 </figure>
                 <div class="card-body items-center text-center">
@@ -361,12 +361,12 @@
               <!-- Sportswear product 1 -->
               <div class="card bg-base-100 pt-4">
                 <figure
-                  class="px-10 py-9 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
+                  class="px-10 py-8 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
                 >
                   <img
                     src="./images/prod4.png"
                     alt="product four image"
-                    class="rounded-xl"
+                    class="rounded-xl h-[130px]"
                   />
                 </figure>
                 <div class="card-body items-center text-center">
@@ -442,12 +442,12 @@
               <!-- Sportswear product 2 -->
               <div class="card bg-base-100 pt-4">
                 <figure
-                  class="px-10 py-7 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
+                  class="px-10 py-8 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
                 >
                   <img
                     src="./images/prod5.png"
                     alt="product five image"
-                    class="rounded-xl"
+                    class="rounded-xl h-[130px]"
                   />
                 </figure>
                 <div class="card-body items-center text-center">
@@ -523,12 +523,12 @@
               <!-- Sportswear product 3 -->
               <div class="card bg-base-100 pt-4">
                 <figure
-                  class="px-10 py-7 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
+                  class="px-10 py-8 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
                 >
                   <img
                     src="./images/prod6.png"
                     alt="product six image"
-                    class="rounded-xl"
+                    class="rounded-xl h-[130px]"
                   />
                 </figure>
                 <div class="card-body items-center text-center">
@@ -605,8 +605,69 @@
           </div>
         </section>
 
-        
+        <!-- product cart section -->
+        <section class="mt-[71px]">
+          <!-- have coupon -->
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="text-primary-text-color text-2xl font-medium mb-4">
+              Have coupon?
+            </h3>
+            <div class="flex h-14 rounded-r-lg">
+              <input
+                type="text"
+                name=""
+                id="coupon-field"
+                class="outline-none border rounded-l-lg border-[#11111126] text-xl font-normal px-4 text-[#11111166]"
+              />
+              <button
+                class="bg-action-bg text-white text-xl font-semibold border-none outline-none h-[100%] px-5 rounded-r-lg"
+              disabled
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+          <!-- items name, total prices, Purchase button and more  -->
+          <div class="bg-white rounded-lg p-6 pb-0 mt-6">
+            <!-- items name -->
+            <ol class="list-decimal px-6 space-y-2">
+              <li class="text-2xl text-primary-text-color font-medium">
+                Home Cooker
+              </li>
+            </ol>
+            <hr class="my-4" />
+            <!-- total price, discount and final-total -->
+            <div>
+              <!-- total price -->
+              <p class="text-primary-text-color text-2xl font-medium">
+                Total price:
+                <span class="text-[#11111180]">0.00<span>TK</span></span>
+              </p>
+              <!-- discount  -->
+              <p class="text-primary-text-color text-2xl font-medium my-3">
+                Discount:
+                <span class="text-[#11111180]">0.00<span>TK</span></span>
+              </p>
+              <!-- final-total -->
+              <p class="text-primary-text-color text-2xl font-medium">
+                Total:
+                <span class="text-[#11111180]">0.00<span>TK</span></span>
+              </p>
+            </div>
+            <hr class="mt-7 mb-5" />
+            <!-- Purchase button -->
+            <button
+              class="w-full relative -bottom-[30px] bg-action-bg text-white text-xl font-semibold border-none outline-none px-16 py-4  rounded-lg"
+              disabled
+            >
+              Make Purchase
+            </button>
+          </div>
+        </section>
       </section>
     </main>
+
+    <!-- custom js here  -->
+    <script src="js/cart.js"></script>
   </body>
 </html>
