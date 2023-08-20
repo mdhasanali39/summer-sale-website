@@ -34,6 +34,7 @@
               "action-bg": "#e527b2",
               "primary-text-color": "#111111",
               "price-color": "rgba(17, 17, 17, 0.50)",
+              "rating-color": "#ffc107",
             },
           },
         },
@@ -41,41 +42,571 @@
     </script>
     <!-- custom css style  -->
     <style>
-        .ff-work-sans{
-            font-family: 'Work Sans', sans-serif;
-        }
+      .ff-work-sans {
+        font-family: "Work Sans", sans-serif;
+      }
+      button:disabled{
+        opacity: .3;
+      }
     </style>
-
   </head>
-  <body>
+  <body class="ff-work-sans">
     <!-- header section  -->
     <header class="bg-header-bg">
       <!-- banner section start  -->
       <div class="hero min-h-screen">
-        <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="hero-content gap-24 flex-col lg:flex-row-reverse">
+          <!-- banner image  -->
           <div class="flex-1">
             <img
               src="./images/Summer 1.png"
-              class="max-w-sm rounded-lg shadow-2xl"
+              class="max-w-xl rounded-lg mr-10"
               alt="summer image"
             />
           </div>
-
-          <div class="flex-1">
-            <p>---SALE FEVER---</p>
-            <h1 class="text-5xl font-bold">
-              Purchase TK 200 or above & get <span>20% off</span>
-            </h1>
-            <p class="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            </p>
+          <!-- banner text content  -->
+          <div class="flex-1 text-center">
             <div>
-              <p>Use Promo Code</p>
-              <p class="bg-primary">SELL200</p>
+              <p class="font-medium text-primary-text-color text-3xl mb-8">
+                ---SALE FEVER---
+              </p>
+              <h1 class="text-5xl font-bold">
+                Purchase TK 200 or above & get
+                <span class="text-action-bg">20% off</span>
+              </h1>
+              <!-- promo code -->
+              <div class="flex items-center justify-center gap-2 mt-14">
+                <p class="text-primary-text-color text-2xl font-medium">
+                  Use Promo Code
+                </p>
+                <p
+                  class="w-36 px-4 py-3 bg-action-bg text-white text-2xl text-center font-semibold rounded-lg"
+                >
+                  SELL200
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
+    <main class="bg-main-bg pt-28 pb-14">
+      <!-- products card section start  -->
+      <section class="flex gap-6 max-w-7xl mx-auto">
+        <!-- all products category -->
+        <section class="flex-1 min-h-screen">
+          <!-- kitchenware products card  -->
+          <div>
+            <!-- heading  -->
+            <h2 class="text-primary-text-color text-4xl font-semibold mb-8">
+              Kitchenware
+            </h2>
+
+            <!-- kitchenware products -->
+            <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+              <!-- kitchenware product 1 -->
+              <div class="card bg-base-100 pt-4">
+                <figure
+                  class="px-10 py-8 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
+                >
+                  <img
+                    src="./images/prod1.png"
+                    alt="product one image"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <!-- product rating -->
+                  <div class="rating rating-md rating-half">
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="rating-hidden"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                  </div>
+                  <h2
+                    class="card-title text-xl text-primary-text-color font-semibold"
+                  >
+                    K. Accessories
+                  </h2>
+                  <p class="text-xl text-price-color font-normal">
+                    <span class="price">39.00</span> TK
+                  </p>
+                </div>
+              </div>
+              <!-- kitchenware product 2 -->
+              <div class="card bg-base-100 pt-4">
+                <figure
+                  class="px-10 py-7 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
+                >
+                  <img
+                    src="./images/prod2.png"
+                    alt="product two image"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <!-- product rating -->
+                  <div class="rating rating-md rating-half">
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="rating-hidden"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                  </div>
+                  <h2
+                    class="card-title text-xl text-primary-text-color font-semibold"
+                  >
+                    K. Accessories 2
+                  </h2>
+                  <p class="text-xl text-price-color font-normal">
+                    <span class="price">25.00</span> TK
+                  </p>
+                </div>
+              </div>
+              <!-- kitchenware product 3 -->
+              <div class="card bg-base-100 pt-4">
+                <figure
+                  class="px-10 py-8 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
+                >
+                  <img
+                    src="./images/prod3.png"
+                    alt="product three image"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <!-- product rating -->
+                  <div class="rating rating-md rating-half">
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="rating-hidden"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                  </div>
+                  <h2
+                    class="card-title text-xl text-primary-text-color font-semibold"
+                  >
+                    Home Cooker
+                  </h2>
+                  <p class="text-xl text-price-color font-normal">
+                    <span class="price">49.00</span> TK
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sportswear products card  -->
+          <div>
+            <!-- heading  -->
+            <h2 class="text-primary-text-color text-4xl font-semibold my-8">
+              Sportswear
+            </h2>
+
+            <!-- Sportswear products -->
+            <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+              <!-- Sportswear product 1 -->
+              <div class="card bg-base-100 pt-4">
+                <figure
+                  class="px-10 py-9 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
+                >
+                  <img
+                    src="./images/prod4.png"
+                    alt="product four image"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <!-- product rating -->
+                  <div class="rating rating-md rating-half">
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="rating-hidden"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                  </div>
+                  <h2
+                    class="card-title text-xl text-primary-text-color font-semibold"
+                  >
+                  Sports Back Cap
+                  </h2>
+                  <p class="text-xl text-price-color font-normal">
+                    <span class="price">49.00</span> TK
+                  </p>
+                </div>
+              </div>
+              <!-- Sportswear product 2 -->
+              <div class="card bg-base-100 pt-4">
+                <figure
+                  class="px-10 py-7 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
+                >
+                  <img
+                    src="./images/prod5.png"
+                    alt="product five image"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <!-- product rating -->
+                  <div class="rating rating-md rating-half">
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="rating-hidden"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                  </div>
+                  <h2
+                    class="card-title text-xl text-primary-text-color font-semibold"
+                  >
+                  Full Jersey Set
+                  </h2>
+                  <p class="text-xl text-price-color font-normal">
+                    <span class="price">69.00</span> TK
+                  </p>
+                </div>
+              </div>
+              <!-- Sportswear product 3 -->
+              <div class="card bg-base-100 pt-4">
+                <figure
+                  class="px-10 py-7 w-11/12 mx-auto bg-[#1111110D] rounded-xl"
+                >
+                  <img
+                    src="./images/prod6.png"
+                    alt="product six image"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <!-- product rating -->
+                  <div class="rating rating-md rating-half">
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="rating-hidden"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-1"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="bg-rating-color mask mask-star-2 mask-half-2"
+                    />
+                  </div>
+                  <h2
+                    class="card-title text-xl text-primary-text-color font-semibold"
+                  >
+                  Sports cates
+                  </h2>
+                  <p class="text-xl text-price-color font-normal">
+                    <span class="price">159.00</span> TK
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+      </section>
+    </main>
   </body>
 </html>
