@@ -41,6 +41,12 @@ for (const card of allCards) {
     // li appended here
     cartNameList.appendChild(li);
 
+    // make purchase button element
+    const makePurchaseBtn = document.getElementById("btn-make-purchase");
+    if (parseFloat(totalPriceElement.innerText) > 0) {
+      makePurchaseBtn.removeAttribute("disabled");
+    }
+
     // have coupon apply button
     const couponBtn = document.getElementById("btn-apply");
     if (parseFloat(totalPriceElement.innerText) >= 200) {
@@ -60,22 +66,8 @@ for (const card of allCards) {
             parseFloat(totalPriceElement.innerText) -
             discountPriceElement.innerText
           ).toFixed(2);
-        } else {
-          alert("Insert valid coupon code");
         }
       });
     }
-
-    // make purchase button element
-    const makePurchaseBtn = document.getElementById("btn-make-purchase");
-    if (parseFloat(totalPriceElement.innerText) > 0) {
-      makePurchaseBtn.removeAttribute("disabled");
-    }
   });
 }
-
-// modal go home button get and set add Event Listener
-const goHomeBtn = document.getElementById("btn-go-home");
-goHomeBtn.addEventListener("click", function () {
-  goHomeBtn.setAttribute("href", "index.html");
-});
